@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
                     <div class="users_name">
-                        Баланс<br>
+                        Баланс:<br>
                         {{ Auth::user()->acc_balance }} руб.
                     </div><br>
                 </div>
@@ -42,7 +42,7 @@
                                      alt="arrow"
                                      class="center_user">
                             @endif
-                            <h3><b>Сумма платежа {{$p->amount}} ₽</b></h3>
+                            <h3><b>Сумма платежа: {{$p->amount}} ₽</b></h3>
                             Время исполнения транзакции: {{$p->timestamp}}<br>
                             Идентификационный номер заказа: № {{$p->id_freight}}<br>
                             Контрагент:<br>

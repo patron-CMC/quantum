@@ -19,7 +19,10 @@
                     <div class="users_name">
                         {{$user_info[0]->email}}
                     </div><br>
-                    <p>Автомобили пользователя</p>
+                    <p>Автомобили пользователя</p><br>
+                    @if(count($user_cars)==0)
+                        Пользователь не имеет в наличии ни одного автомобиля<br>
+                    @endif
                     @foreach($user_cars as $car)
                         <div class="auto_list">
                             <h3><b>{{$car->car_brand}}</b></h3>
