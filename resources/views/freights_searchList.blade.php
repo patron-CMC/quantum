@@ -15,7 +15,7 @@
                     @endif
                     @foreach($freights as $freight)
                         <div class="auto_list">
-                            <h3><b>Идентификационный номер заказа: № {{$freight->id}}</b></h3>
+                            <h3><b>Идентификационный номер заказа: №{{$freight->id}}</b></h3>
                             Плата за грузоперевозку: {{$freight->price}}<br>
                             Время отправления груза: {{substr($freight->dep_time, 0, 5)}}<br>
                             Габариты груза в метрах: {{$freight->dimensions}}<br>
